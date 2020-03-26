@@ -232,7 +232,9 @@ int main()
     char ** array, **unfound = NULL, input_word[100] = {'\0'};
 
     if((fr = fopen("osemsmerovka.txt","r")) == NULL){
-        printf("The file could not be opened");
+        printf("file osemsmerovka.txt could not be opened (404)\n\nPRESS ENTER TO EXIT!");
+        getchar();
+
         return 404;
     }
 
